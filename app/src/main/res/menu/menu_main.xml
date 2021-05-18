@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/norma_option_group"
+        android:visible="true">
+        <item
+            android:id="@+id/selection_menu"
+            android:title="delete" />
+        <item
+            android:id="@+id/my_info_menu"
+            android:title="my information"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/add_contact_menu"
+            android:icon="@drawable/icon_plus_2"
+            android:title="add contact"
+            app:showAsAction="ifRoom"/>
+    </group>
+
+    <group
+        android:id="@+id/delete_option_group"
+        android:visible="false">
+        <item
+
+            android:id="@+id/delete_contact_menu"
+            android:icon="@drawable/delete_icon_4"
+            android:title="delete"
+            app:showAsAction="always" />
+        <item
+            android:title="select all contact"
+            android:id="@+id/select_all_menu"
+            android:checkable="true"
+            android:checked="false"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/select_all_dark"
+            android:tooltipText="select all"
+            />
+    </group>
+
+</menu>
